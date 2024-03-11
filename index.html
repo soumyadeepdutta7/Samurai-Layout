@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samurai Layout</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Page 1 styles */
+      .page1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-image: url(./Bg1.png);
+        background-size: cover;
+        height: 260px ;
+      }
+
+      nav {
+        display: flex;
+        gap: 30px;
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        height: 25px;
+      }
+
+      .page1>select {
+        background-color: black;
+        color: white;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+      }
+
+      button {
+        background-color: #ea0034;
+        color: white;
+        border: 1px solid #ea0034;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      .bodypart {
+        padding-top: 160px;
+        display: flex;
+        justify-content: center;
+        margin-top: -239px;
+        color: white;
+      }
+
+      /* Page 2 styles */
+      .background-image {
+        background-image: url("background-image.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color: black;
+      }
+
+      .background-image .text {
+        flex: 1;
+        padding-right: 20px;
+      }
+
+      .background-image img {
+        flex: 1;
+      }
+
+      /* Page 3 styles */
+      .card-layout {
+        background-image: url(./BG-2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        background-color: black;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+
+      /* Page 4 styles */
+      .faq-section {
+        background-color: black;
+        color: white;
+        padding: 50px;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: black;
+        color: white;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+      select {
+        background-color: #ea0034;
+        color: white;
+        border: 1px solid #ea0034;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+      .allques{
+        background-color: #454545;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page 1 -->
+    <div class="page1">
+      <img src="./Logo Savior red copy.png" alt="Logo" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">IDO</a>
+        <a href="#">Takenomics</a>
+        <a href="#">Roadmap</a>
+        <select name="Coming Soon" id="dropdwon">
+          <option value="" disabled selected>Coming soon</option>
+        </select>
+      </nav>
+      <button>Connect wallet</button>
+    </div>
+
+    <!-- Page 1 content -->
+    <div class="bodypart">
+      <h1>Where Blockchain Heroes Thrive, Rescuing</h1>
+      <h1>Dreams, Elevating Fortunes.</h1>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="background-image">
+      <div class="text">
+        <h2>INTRODUCTION</h2>
+        <p>
+          We've all been in the mud ance, and now we've decided to fight it out.
+          Pay tribute to those pioneers of WEB3 and the warriors who dedicated
+          their love to the blockchain, Save the lucky ones alive, join us to
+          save the future! Our mission is to empower everyone to share wealth
+          and succeed, read more...
+        </p>
+        <select name="Coming Soon" id="dropdwon1">
+          <option value="" disabled selected>Documents</option>
+        </select>
+      </div>
+      <img src="./Image 2.png" alt="Image 2" />
+    </div>
+
+    <!-- Page 3 -->
+    <div class="card-layout">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./card_1.png-1.png" alt="Card 1" />
+        <p>Card 1 description</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="./card_1.png-2.png" alt="Card 2" />
+        <p>Card 2 description</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="./card_1.png-3.png" alt="Card 3" />
+        <p>Card 3 description</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="./card_1.png.png" alt="Card 4" />
+        <p>Card 4 description</p>
+      </div>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="faq-section">
+      <h2>FAQ</h2>
+      <div class="allques">
+      <select name="question" id="Question1">
+        <option value="" disabled selected>1. Why choose saviour?</option>
+      </select>
+      <select name="Question" id="Question2">
+        <option value="" disabled selected>2. Why is the IDO duration so long ?</option>
+      </select>
+      <select name="Question" id="Question3">
+        <option value="" disabled selected>3. When will trading go live ?</option>
+      </select>
+      <select name="Question" id="Question4">
+        <option value="" disabled selected>4. When can we claim the tokens ?</option>
+      </select>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <img
+        src="./Link ΓÅ╡ icon-twitter.6b3c178f26a209f13bcced7e816ba143.svg.png"
+        alt="twitter"
+      />
+      <img
+        src="./icon-telegram.3e7b16fc68b2a61fe78c02f92f7a45f6.svg.png"
+        alt="telegram"
+      />
+      <img src="./clarity_email-solid.png" alt="mail" />
+      <div class="social-media-links"></div>
+    </div>
+  </body>
+</html>
